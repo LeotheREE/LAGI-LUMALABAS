@@ -3,7 +3,7 @@ const categories = {
     {
         "question": "How is the capital recovery factor (A/P,i,n) related to the uniform series sinking fund factor (A/P,i,n)? i is the effective annual rate of return, and n is the number of periods.",
         "choices": ["(A/P,i,n) = (A/F,i,n) - i", "A/P,i,n) = (A/P,i,n) + n/n", "A/P,i,n) = (A/P,i,n)/i", "(A/P,i,n) = (A/F,i,n) + i"],
-        "answer": "A/P,i,n) = (A/P,i,n)/i"
+        "answer": "(A/P,i,n) = (A/F,i,n) + i"
     },
     {
         "question": "What is an annuity?",
