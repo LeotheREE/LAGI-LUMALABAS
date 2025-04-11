@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>LAGI LUMALABAS</title>
+    <link rel="stylesheet" href="styles.css">
+<!-- Favicon for browsers -->
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+
+    <!-- Icons for mobile and web apps -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="app">
+        <!-- Refresher -->
+        <div id="menu-container">
+            <h1>Select a Category</h1>
+            <div id="categories-container">
+		<button class="category" data-category="Engineering Economics">Engineering Economics</button>
+		<button class="category" data-category="Fluid Statics and Dynamics">Fluid Statics and Dynamics</button>
+                <button class="category" data-category="Thermodynamics">Thermodynamics</button>
+		<button class="category" data-category="Chemistry & Statics">Chemistry & Statics</button>
+		<button class="category" data-category="Material Science">Material Science</button>
+		<button class="category" data-category="Mechanics of Material & Dynamics">Mechanics of Material & Dynamics</button>
+		<button class="category" data-category="EE-DC Electricity">EE-DC Electricity</button>
+		<button class="category" data-category="EE-AC Electricity">EE-AC Electricity</button>
+            </div>
+        </div>
+
+        <!-- Quiz Container -->
+        <div id="quiz-container" style="display: none;">
+            <h1 id="category-title"></h1>
+            <div id="question-container">
+                <p id="question"></p>
+                <div id="choices-container"></div>
+            </div>
+            <div id="controls">
+                <button id="next-button" disabled>Next</button>
+                <button id="restart-button" style="display: none;">Restart</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+<script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.body.classList.add("fade-in");
+        });
+    </script>
+
+</body>
+</html>
